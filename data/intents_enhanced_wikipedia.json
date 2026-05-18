@@ -1,0 +1,469 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "What's up",
+        "How are you",
+        "Howdy",
+        "Greetings",
+        "Sup",
+        "Yo",
+        "Hi there",
+        "Hello there",
+        "Hey there",
+        "Good day",
+        "Nice to meet you",
+        "Salutations"
+      ],
+      "responses": [
+        "Hello! I'm your AI assistant with Wikipedia integration. I can help you with questions, search for information, or just have a chat. What would you like to know?",
+        "Hi there! I'm here to help you find information, answer questions, or search Wikipedia for detailed knowledge. How can I assist you today?",
+        "Hey! Welcome! I can help you with various topics and search Wikipedia for comprehensive information. What are you curious about?",
+        "Greetings! I'm your intelligent assistant ready to help with questions and Wikipedia searches. What can I do for you?"
+      ],
+      "context": ""
+    },
+    {
+      "tag": "wikipedia_search",
+      "patterns": [
+        "search for",
+        "tell me about",
+        "what is",
+        "who is",
+        "when was",
+        "when were",
+        "when did",
+        "where is",
+        "where was",
+        "how does",
+        "how do",
+        "how did",
+        "explain",
+        "define",
+        "information about",
+        "facts about",
+        "wikipedia",
+        "look up",
+        "find information",
+        "research",
+        "learn about",
+        "details about",
+        "history of",
+        "biography of",
+        "what are",
+        "what were",
+        "how to",
+        "why does",
+        "why did",
+        "why is",
+        "why are",
+        "can you tell me",
+        "I want to know",
+        "I need to know",
+        "help me understand",
+        "give me information",
+        "show me information",
+        "find me information"
+      ],
+      "responses": [
+        "I'll search Wikipedia for that information. Let me find what you're looking for...",
+        "Searching Wikipedia for comprehensive information about your query...",
+        "Let me look that up on Wikipedia for you...",
+        "I'll find detailed information about that topic from Wikipedia..."
+      ],
+      "context": "wikipedia_search"
+    },
+    {
+      "tag": "science_tech",
+      "patterns": [
+        "artificial intelligence",
+        "machine learning",
+        "quantum physics",
+        "quantum computing",
+        "space exploration",
+        "climate change",
+        "renewable energy",
+        "solar power",
+        "wind energy",
+        "biotechnology",
+        "nanotechnology",
+        "robotics",
+        "cryptocurrency",
+        "bitcoin",
+        "blockchain",
+        "internet of things",
+        "5G",
+        "virtual reality",
+        "augmented reality",
+        "DNA",
+        "genetics",
+        "evolution",
+        "black hole",
+        "neutron star",
+        "galaxy",
+        "telescope",
+        "satellite",
+        "rocket",
+        "spacecraft",
+        "mars",
+        "moon landing",
+        "nuclear power",
+        "fusion",
+        "chemistry",
+        "physics",
+        "biology",
+        "mathematics"
+      ],
+      "responses": [
+        "That's a fascinating topic in science and technology! Let me search for comprehensive information...",
+        "Science and technology topics are exciting! I'll find detailed information for you...",
+        "Great question about modern science and tech! Searching for in-depth details..."
+      ],
+      "context": "wikipedia_search"
+    },
+    {
+      "tag": "history_culture",
+      "patterns": [
+        "ancient",
+        "medieval",
+        "renaissance",
+        "world war",
+        "civilization",
+        "empire",
+        "revolution",
+        "historical",
+        "culture",
+        "tradition",
+        "mythology",
+        "legend",
+        "historical figure",
+        "historical event",
+        "dynasty",
+        "kingdom",
+        "republic",
+        "democracy",
+        "ancient egypt",
+        "ancient greece",
+        "roman empire",
+        "vikings",
+        "crusades",
+        "napoleon",
+        "hitler",
+        "churchill",
+        "gandhi",
+        "lincoln",
+        "shakespeare",
+        "leonardo da vinci",
+        "mozart",
+        "beethoven",
+        "picasso"
+      ],
+      "responses": [
+        "History and culture are rich topics! Let me find comprehensive information...",
+        "That's an interesting historical or cultural topic! Searching for details...",
+        "Great question about history and culture! I'll look up detailed information..."
+      ],
+      "context": "wikipedia_search"
+    },
+    {
+      "tag": "geography_travel",
+      "patterns": [
+        "country",
+        "city",
+        "capital",
+        "continent",
+        "ocean",
+        "mountain",
+        "river",
+        "desert",
+        "forest",
+        "island",
+        "population",
+        "tourism",
+        "landmarks",
+        "monuments",
+        "national park",
+        "geography",
+        "climate",
+        "weather patterns",
+        "Paris",
+        "London",
+        "New York",
+        "Tokyo",
+        "Sydney",
+        "Rome",
+        "Cairo",
+        "Mount Everest",
+        "Amazon",
+        "Sahara",
+        "Nile",
+        "Pacific Ocean",
+        "Atlantic Ocean"
+      ],
+      "responses": [
+        "Geography and travel topics are wonderful! Let me search for comprehensive information...",
+        "That sounds like an interesting place or geographical feature! Searching for details...",
+        "Great question about geography! I'll find detailed information for you..."
+      ],
+      "context": "wikipedia_search"
+    },
+    {
+      "tag": "animals_nature",
+      "patterns": [
+        "animals",
+        "wildlife",
+        "endangered species",
+        "mammals",
+        "birds",
+        "reptiles",
+        "fish",
+        "insects",
+        "ecosystem",
+        "biodiversity",
+        "conservation",
+        "natural habitat",
+        "lion",
+        "tiger",
+        "elephant",
+        "whale",
+        "shark",
+        "eagle",
+        "penguin",
+        "dinosaur",
+        "extinct animals",
+        "evolution",
+        "natural selection",
+        "adaptation"
+      ],
+      "responses": [
+        "Animals and nature are fascinating topics! Let me find detailed information...",
+        "That's a wonderful question about the natural world! Searching for comprehensive details...",
+        "Great interest in wildlife and nature! I'll look up detailed information for you..."
+      ],
+      "context": "wikipedia_search"
+    },
+    {
+      "tag": "bot_info",
+      "patterns": [
+        "What are you?",
+        "Are you a robot?",
+        "Are you human?",
+        "What can you do?",
+        "Tell me about yourself",
+        "Your capabilities",
+        "How do you work?",
+        "What are your features?",
+        "What's your purpose?",
+        "Are you AI?",
+        "Can you search wikipedia?",
+        "What information can you find?"
+      ],
+      "responses": [
+        "I'm an enhanced AI chatbot with Wikipedia integration! I can answer questions, search for information on any topic, and help you learn about virtually anything.",
+        "I'm your AI assistant with access to Wikipedia's vast knowledge base. I can help you find comprehensive information on almost any topic you're curious about!",
+        "I'm an intelligent chatbot that combines conversational AI with Wikipedia search capabilities. I'm here to help you learn and find information!",
+        "I'm your enhanced AI companion! I can chat, answer questions, and search Wikipedia for detailed information on any topic you're interested in."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "I need help",
+        "Can you help me?",
+        "Support",
+        "Assistance",
+        "How do you work?",
+        "Commands",
+        "What can I ask?",
+        "How to use",
+        "Instructions",
+        "Guide",
+        "Tutorial"
+      ],
+      "responses": [
+        "I'm here to help! You can ask me questions about any topic, and I'll search Wikipedia for comprehensive answers. Try asking 'Tell me about [topic]' or just ask any question!",
+        "I can assist you with information on virtually any topic! Ask me about science, history, geography, people, events, or anything else you're curious about.",
+        "I'm your information assistant! I can search Wikipedia and provide detailed answers. What would you like to learn about today?",
+        "You can ask me anything! I specialize in finding information from Wikipedia. Try questions like 'What is...?', 'Who was...?', 'Tell me about...', or 'Explain...'"
+      ],
+      "context": "help"
+    },
+    {
+      "tag": "learning_education",
+      "patterns": [
+        "homework help",
+        "study",
+        "learn",
+        "education",
+        "school",
+        "university",
+        "college",
+        "research paper",
+        "assignment",
+        "exam",
+        "test",
+        "quiz",
+        "subject",
+        "course",
+        "curriculum",
+        "academic",
+        "student",
+        "teacher",
+        "mathematics",
+        "science",
+        "history",
+        "literature",
+        "philosophy"
+      ],
+      "responses": [
+        "I'd be happy to help with your learning! I can search for educational information on any topic. What subject are you studying?",
+        "Learning is wonderful! I can help you find comprehensive information for your studies. What topic do you need help with?",
+        "Education support is one of my specialties! I can search for detailed information to help with your studies."
+      ],
+      "context": "wikipedia_search"
+    },
+    {
+      "tag": "famous_people",
+      "patterns": [
+        "biography",
+        "life story",
+        "famous person",
+        "celebrity",
+        "historical figure",
+        "scientist",
+        "inventor",
+        "artist",
+        "musician",
+        "writer",
+        "politician",
+        "athlete",
+        "actor",
+        "director",
+        "philosopher",
+        "leader",
+        "pioneer"
+      ],
+      "responses": [
+        "I can find biographical information about famous people! Who would you like to learn about?",
+        "Biographies are fascinating! I can search for detailed information about any notable person. Who interests you?",
+        "Great question about notable people! I can find comprehensive biographical information. Who should I look up?"
+      ],
+      "context": "wikipedia_search"
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "See you soon",
+        "Talk to you later",
+        "Catch you later",
+        "Farewell",
+        "Take care",
+        "Until next time",
+        "I'm leaving",
+        "Gotta go",
+        "I have to go",
+        "Time to leave"
+      ],
+      "responses": [
+        "Goodbye! It was great helping you learn new things today. Come back anytime for more information!",
+        "See you later! Don't hesitate to return if you need help with any topic!",
+        "Farewell! I hope I was able to help you discover something interesting today!",
+        "Take care! Remember, I'm here whenever you need information or have questions!"
+      ],
+      "context": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Thank you so much",
+        "I appreciate it",
+        "Thanks a lot",
+        "Much appreciated",
+        "That's helpful",
+        "Perfect",
+        "Awesome",
+        "Great",
+        "Excellent",
+        "You're the best",
+        "Amazing",
+        "That was useful",
+        "Very informative",
+        "Learned something new"
+      ],
+      "responses": [
+        "You're very welcome! I'm glad I could help you find the information you needed!",
+        "Happy to help! Feel free to ask me about any other topics you're curious about!",
+        "You're welcome! I enjoy helping people learn new things. What else would you like to know?",
+        "My pleasure! I'm here whenever you need information or have questions!"
+      ],
+      "context": ""
+    },
+    {
+      "tag": "current_events",
+      "patterns": [
+        "news",
+        "current events",
+        "recent",
+        "today",
+        "latest",
+        "happening now",
+        "breaking news",
+        "updates",
+        "what's new",
+        "recent developments"
+      ],
+      "responses": [
+        "For current events and breaking news, I recommend checking reliable news sources. However, I can search Wikipedia for background information on recent events and topics.",
+        "I don't have access to real-time news, but I can provide background information from Wikipedia about current topics and events.",
+        "While I can't provide live news updates, I can search Wikipedia for comprehensive background information on current events and topics."
+      ],
+      "context": "wikipedia_search"
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke",
+        "Joke",
+        "Make me laugh",
+        "Something funny",
+        "Humor",
+        "Be funny",
+        "Entertain me",
+        "Fun",
+        "Funny"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything! Want to learn more about atoms from Wikipedia?",
+        "What do you call a chatbot that loves Wikipedia? A know-it-all! Speaking of which, what would you like to learn about?",
+        "Why did the AI go to Wikipedia? To expand its knowledge base! What topic can I help you explore today?",
+        "What's a chatbot's favorite type of music? Algo-rhythms! Now, what interesting topic shall we explore together?"
+      ],
+      "context": ""
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understand exactly, but I can try searching Wikipedia for information. Could you rephrase your question or tell me what topic you'd like to learn about?",
+        "I didn't quite catch that, but I'm great at finding information! What topic would you like me to search for?",
+        "Let me help you find information instead! What subject or topic are you interested in learning about?",
+        "I can search Wikipedia for almost any topic! What would you like to know more about?"
+      ],
+      "context": "wikipedia_search"
+    }
+  ]
+}

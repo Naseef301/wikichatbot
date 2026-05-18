@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="/UI/css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="bot-avatar">
+                <div class="avatar-icon">🤖</div>
+            </div>
+            <div class="header-info">
+                <h1 class="bot-title">WikiChatBot</h1>
+<!--                <p class="bot-status">Online • Powered by Wikipedia</p>-->
+            </div>
+            <button class="info-btn" id="infoBtn" aria-label="Information">ℹ️</button>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Welcome Card -->
+            <div class="welcome-card">
+                <div class="welcome-header">
+<!--                    <span class="welcome-emoji">👋</span>-->
+                    <h3>Welcome to Wikipedia integrated ChatBot !</h3>
+                </div>
+                <p>I'm your assistant with Wikipedia integration. Ask me about any topic and I'll provide comprehensive information.</p>
+
+                <div class="example-queries">
+                    <h4>Try these example questions:</h4>
+                    <div class="example-grid">
+                        <button class="example-btn" data-query="Tell me about artificial intelligence">Artificial Intelligence</button>
+                        <button class="example-btn" data-query="What is quantum physics?">Quantum Physics</button>
+                        <button class="example-btn" data-query="lionel messi?">lionel messi</button>
+                        <button class="example-btn" data-query="Explain black holes">Black Holes</button>
+                        <button class="example-btn" data-query="What is the capital of France?">Capital of France</button>
+                        <button class="example-btn" data-query="Internet">Internet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator hidden" id="typingIndicator">
+            <div class="typing-avatar">🤖</div>
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+            <div class="input-container">
+                <input type="text"
+                       class="chat-input form-control"
+                       id="chatInput"
+                       placeholder="Ask me anything..."
+                       maxlength="500"
+                       autocomplete="off">
+                <div class="input-actions">
+                    <span class="character-counter" id="charCounter">0/500</span>
+                    <button class="send-btn btn btn--primary" id="sendBtn" aria-label="Send message">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="quick-actions">
+                <button class="quick-btn btn btn--outline btn--sm" id="clearBtn">Clear Chat</button>
+<!--                <button class="quick-btn btn btn&#45;&#45;outline btn&#45;&#45;sm" id="exportBtn">Export History</button>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div class="modal hidden" id="infoModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>How to Use Enhanced ChatBot Pro</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="info-section">
+                    <h4>🤖 About the Bot</h4>
+                    <p>This chatbot uses the Wikipedia API to provide comprehensive information on virtually any topic. It features intelligent pattern matching to understand your queries.</p>
+                </div>
+
+                <div class="info-section">
+                    <h4>💬 How to Chat</h4>
+                    <ul>
+                        <li>Type your question in natural language</li>
+                        <li>Click the example queries to get started</li>
+                        <li>Ask about science, history, geography, people, and more</li>
+                        <li>Use phrases like "What is...", "Tell me about...", "Who was..."</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h4>🌟 Features</h4>
+                    <ul>
+                        <li>Real-time Wikipedia integration</li>
+                        <li>Intelligent response generation</li>
+                        <li>Chat history export (JSON format)</li>
+                        <li>Mobile-responsive design</li>
+                        <li>No installation required</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h4>📱 Tips</h4>
+                    <ul>
+                        <li>Be specific in your questions for better results</li>
+                        <li>Try different phrasings if needed</li>
+                        <li>Use the Clear Chat button to start fresh</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/UI/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

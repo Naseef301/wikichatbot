@@ -1,0 +1,30 @@
+# Enhanced ChatBot Pro - Dependencies
+
+# Core ML and NLP libraries
+tensorflow>=2.13.0
+keras>=2.13.1
+numpy>=1.24.3
+nltk>=3.8.1
+scikit-learn>=1.3.0
+
+# Web framework and API
+Flask>=2.3.3
+Flask-CORS>=4.0.0
+
+# Wikipedia integration
+wikipedia>=1.4.0
+requests>=2.31.0
+
+# Data processing
+pandas>=2.0.3
+json5>=0.9.14
+
+# Development and testing
+pytest>=7.4.0
+python-dotenv>=1.0.0
+
+# Optional: For advanced features
+# speechrecognition>=3.10.0  # For voice input
+# pyttsx3>=2.90  # For text-to-speech
+# matplotlib>=3.7.2  # For training visualization
+# seaborn>=0.12.2  # For enhanced plots
